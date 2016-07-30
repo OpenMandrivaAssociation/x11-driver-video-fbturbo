@@ -36,6 +36,7 @@ but has NEON optimised code paths to improve ARM
 %prep
 %setup -q -n xf86-video-fbturbo-%{?gitdate:%{gitdate}}%{!?gitdate:%{dirsuffix}} 
 touch AUTHORS
+sed -i "s!.altmacro!!g" src/arm_asm.S
 
 %build
 %{?gitdate:autoreconf -v --install}
