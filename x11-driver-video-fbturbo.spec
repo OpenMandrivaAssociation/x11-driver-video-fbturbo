@@ -16,6 +16,11 @@ Group:     System/X11
 Source0:    xf86-video-fbturbo-%{gitdate}.tar.bz2
 Source1:    make-git-snapshot.sh
 
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	pkgconfig(libdrm)
 BuildRequires:	x11-proto-devel >= 1.0.0
 BuildRequires:	x11-server-devel >= 1.0.1
